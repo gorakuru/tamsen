@@ -7,10 +7,27 @@ import requests
 def test():
     print 'foo'
 
-def sendData(channel,writeKey,d1=0,d2=0,d3=0,d4=0,d5=0,d6=0,d7=0,d8=0):
+def sendData(channel,writeKey,d1=None,d2=None,d3=None,d4=None,d5=None,d6=None,d7=None,d8=None):
 	HOST = '54.65.206.59'
+	data = {'writeKey':writeKey}
+	if d1 is not None:
+		data["d1"] = int(d1)
+	if d2 is not None:
+		data["d2"] = int(d2)
+	if d3 is not None:
+		data["d3"] = int(d3)
+	if d4 is not None:
+		data["d4"] = int(d4)
+	if d5 is not None:
+		data["d5"] = int(d5)
+	if d6 is not None:
+		data["d6"] = int(d6)
+	if d7 is not None:
+		data["d7"] = int(d7)
+	if d8 is not None:
+		data["d8"] = int(d8)	
 	response = requests.post(
       'http://'+HOST+'/api/v2/channels/'+str(channel)+'/data',
-      json.dumps({'writeKey':writeKey,'d1':int(d1),'d2':int(d2),'d3':int(d3),'d4':int(d4),'d5':int(d5),'d6':int(d6),'d7':int(d7),'d8':int(d8)}),
+      json.dumps(data),
       headers={'Content-Type': 'application/json'})
 	return(response)
