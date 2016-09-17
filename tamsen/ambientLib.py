@@ -7,7 +7,7 @@ import requests
 def test():
     print 'foo'
 
-def send(channel,writeKey,d1=0,d2=0,d3=0,d4=0,d5=0,d6=0,d7=0,d8=0):
+def sendData(channel,writeKey,d1=0,d2=0,d3=0,d4=0,d5=0,d6=0,d7=0,d8=0):
 	HOST = '54.65.206.59'
 	response = requests.post(
       'http://'+HOST+'/api/v2/channels/'+str(channel)+'/data',
