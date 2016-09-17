@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
-from ambientlib import send
+from ambientlib import test
  
 __author__  = 'tamumasa'
 __version__ = '0.0.1'

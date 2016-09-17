@@ -1,5 +1,5 @@
 #!/usr/bin/env python
 # coding: utf-8
  
-def send():
+def test():
     print 'foo'
