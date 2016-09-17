@@ -1,7 +1,7 @@
 # tamsen
 python minimal library for https://ambidata.io/
 
-#　使い方
+# 使い方
 
 ~~~
 import tamsen
