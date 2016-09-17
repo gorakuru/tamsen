@@ -1,2 +1,2 @@
 # tamsen
-python minimal libraly for https://ambidata.io/
+python minimal library for https://ambidata.io/
