@@ -1,5 +1,5 @@
 # tamsen
-python minimal library for https://ambidata.io/
+センサーデバイスからの値を簡単にグラフ化できる https://ambidata.io/ 向けのライブラリです。
 
 # 使い方
 
