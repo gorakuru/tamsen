@@ -24,6 +24,7 @@ Raspberry PiのCPUの温度を送信
 
 ~~~
 import tamsen
+import sys
 
 channelID = xxx
 writeKey = "xxxxxxxxx"
