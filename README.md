@@ -27,11 +27,11 @@ import tamsen
 import sys
 
 channelID = xxx
-writeKey = "xxxxxxxxx"
+writeKey = "xxxxxxxxxx"
 
 fn = open('/sys/class/thermal/thermal_zone0/temp', 'r')
 for line in fn:
   CPU_TEMP = int(line) / float(1000)
 
-tamsen.sendData(channelID,writeKey,d1　= CPU_TEMP)
+print(tamsen.sendData(channelID,writeKey,d1 = CPU_TEMP))
 ~~~
