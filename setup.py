@@ -13,5 +13,5 @@ setup(
         url              = 'https://github.com/gorakuru/tamsen',
         keywords         = 'https://ambidata.io/',
         packages         = find_packages(),
-        install_requires = ['json','requests'],
+        install_requires = ['requests'],
         )
